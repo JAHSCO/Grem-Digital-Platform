@@ -1,0 +1,27 @@
+.portfolio-hero { background-image: url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1900&q=85"); }
+.portfolio-content { padding-top: 70px; }
+.portfolio-note { display: flex; align-items: flex-start; gap: 13px; margin-bottom: 35px; padding: 17px 20px; border-left: 3px solid var(--lime-dark); background: #edf0e5; }
+.portfolio-note > span { display: grid; width: 22px; height: 22px; flex: 0 0 22px; place-items: center; border-radius: 50%; background: var(--ink); color: var(--white); font-size: 12px; font-weight: 700; }
+.portfolio-note p { margin: 0; color: #505c57; font-size: 13px; }
+.portfolio-note strong { color: var(--ink); }
+.portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 52px 26px; }
+.project-card { min-width: 0; }
+.project-image { position: relative; display: flex; min-height: 300px; align-items: flex-end; padding: 17px; background-color: #d7ded4; background-position: center; background-size: cover; }
+.project-image::before { position: absolute; inset: 45% 0 0; background: linear-gradient(0deg, rgba(18,31,28,.58), transparent); content: ""; }
+.project-image > span { position: relative; color: var(--white); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
+.project-image-one { background-image: url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85"); }
+.project-image-two { background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85"); }
+.project-image-three { background-image: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85"); }
+.project-info { padding-top: 20px; }
+.project-info .eyebrow { margin-bottom: 10px; font-size: 10px; }
+.project-info h2 { margin-bottom: 9px; font-size: 25px; }
+.project-info > p:not(.eyebrow) { max-width: 510px; margin-bottom: 15px; color: var(--muted); font-size: 14px; }
+.placeholder-label { display: inline-block; padding: 5px 9px; border: 1px solid #d5d8ce; color: #606a62; font-size: 10px; font-weight: 600; }
+.portfolio-cta { padding: 65px 0; background: var(--ink); color: var(--white); }
+.portfolio-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.portfolio-cta h2 { max-width: 700px; margin: 0; font-size: clamp(34px, 4.4vw, 53px); }
+@media (max-width: 760px) {
+  .portfolio-grid { grid-template-columns: 1fr; gap: 38px; }
+  .project-image { min-height: 270px; }
+  .portfolio-cta-inner { align-items: flex-start; flex-direction: column; }
+}

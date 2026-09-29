@@ -1,0 +1,28 @@
+.contact-hero { background-image: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1900&q=85"); }
+.contact-content { padding-top: 80px; }
+.contact-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; align-items: start; }
+.contact-details h2 { max-width: 440px; font-size: clamp(36px, 4vw, 49px); }
+.contact-details > p:not(.eyebrow, .form-demo-note) { max-width: 410px; margin-bottom: 33px; color: var(--muted); }
+.contact-detail { display: flex; flex-direction: column; gap: 2px; margin: 0 0 18px; }
+.detail-label { color: #778144; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.contact-detail strong, .contact-detail a { font-size: 14px; }
+.contact-detail a { width: fit-content; border-bottom: 1px solid #a9b183; }
+.form-demo-note { margin-top: 33px; padding: 15px 17px; border-left: 3px solid var(--coral); background: #f0eee6; color: #58615b; font-size: 11px; }
+.form-demo-note strong { color: var(--ink); }
+.contact-form { padding: 34px; background: var(--white); border: 1px solid var(--line); }
+.form-row { margin-bottom: 20px; }
+.form-row label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 700; }
+.form-row label span { color: #b6533b; }
+.form-row input, .form-row textarea { display: block; width: 100%; padding: 13px 14px; border: 1px solid #d9ddd5; border-radius: 2px; background: #fbfcf9; color: var(--ink); font-size: 13px; transition: border-color .2s ease, box-shadow .2s ease; }
+.form-row input::placeholder, .form-row textarea::placeholder { color: #9ba29d; }
+.form-row input:focus, .form-row textarea:focus { border-color: #819342; outline: 0; box-shadow: 0 0 0 3px rgba(214,240,120,.3); }
+.form-row textarea { min-height: 135px; resize: vertical; }
+.form-row [aria-invalid="true"] { border-color: #bb5844; }
+.field-error { display: block; min-height: 0; margin-top: 4px; color: #a43f2b; font-size: 11px; }
+.field-error:not(:empty) { min-height: 17px; }
+.form-submit { border: 0; cursor: pointer; }
+.form-status { min-height: 20px; margin: 14px 0 0; color: #426021; font-size: 12px; font-weight: 600; }
+@media (max-width: 760px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 38px; }
+  .contact-form { padding: 25px 20px; }
+}
