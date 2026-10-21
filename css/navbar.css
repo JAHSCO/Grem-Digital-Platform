@@ -1,15 +1,15 @@
-.site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(23,35,34,.08); background: rgba(247,247,242,.97); backdrop-filter: blur(12px); }
+.site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(16,35,63,.08); background: rgba(255,255,255,.97); backdrop-filter: blur(12px); }
 .nav-wrap { display: flex; min-height: 78px; align-items: center; justify-content: space-between; gap: 28px; }
 .site-nav { display: flex; align-items: center; gap: clamp(17px, 2.1vw, 29px); }
-.site-nav > a:not(.button) { position: relative; color: #485451; font-size: 12px; font-weight: 600; transition: color .2s ease; }
+.site-nav > a:not(.button) { position: relative; color: #53647b; font-size: 12px; font-weight: 600; transition: color .2s ease; }
 .site-nav > a:not(.button):hover, .site-nav > a[aria-current="page"] { color: var(--ink); }
-.site-nav > a[aria-current="page"]::after { position: absolute; right: 0; bottom: -8px; left: 0; height: 2px; background: var(--lime-dark); content: ""; }
+.site-nav > a[aria-current="page"]::after { position: absolute; right: 0; bottom: -8px; left: 0; height: 2px; background: var(--blue); content: ""; }
 .site-nav .nav-cta { min-height: 43px; padding-inline: 15px; white-space: nowrap; }
 .button-small { font-size: 11px; }
 .menu-toggle { display: none; }
 @media (max-width: 900px) {
   .nav-wrap { min-height: 72px; }
-  .menu-toggle { display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; flex-direction: column; gap: 6px; border: 1px solid var(--line); border-radius: 3px; background: transparent; cursor: pointer; }
+  .menu-toggle { display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; flex-direction: column; gap: 6px; border: 1px solid var(--line); border-radius: 7px; background: transparent; cursor: pointer; }
   .menu-toggle span { width: 18px; height: 2px; background: var(--ink); transition: transform .2s ease; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
